@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261205842D78593D00F995E5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261205832D78593D00F995E5 /* CustomButton.swift */; };
+		261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261205852D78597000F995E5 /* ProfileHeaderView.swift */; };
 		26210DAF2D78348300500976 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DAE2D78348000500976 /* FeedView.swift */; };
 		26210DB22D78395800500976 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DB12D78395100500976 /* ProfileView.swift */; };
 		26210DB42D783B2800500976 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DB32D783B2800500976 /* HeaderView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261205832D78593D00F995E5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		261205852D78597000F995E5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		26210DAE2D78348000500976 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		26210DB12D78395100500976 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		26210DB32D783B2800500976 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				26210DB12D78395100500976 /* ProfileView.swift */,
+				261205852D78597000F995E5 /* ProfileHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				265292C22D78413800CA7F92 /* DividerView.swift */,
+				261205832D78593D00F995E5 /* CustomButton.swift */,
 				265292CC2D784D5700CA7F92 /* PostView.swift */,
 			);
 			path = Views;
@@ -309,8 +315,10 @@
 				265292C32D78413E00CA7F92 /* DividerView.swift in Sources */,
 				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
 				265292C52D78417800CA7F92 /* MyStoryCardView.swift in Sources */,
+				261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */,
 				265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
+				261205842D78593D00F995E5 /* CustomButton.swift in Sources */,
 				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
 				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
 				265292CD2D784D5700CA7F92 /* PostView.swift in Sources */,

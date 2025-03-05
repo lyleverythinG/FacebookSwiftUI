@@ -12,6 +12,7 @@ struct HeaderView: View {
         HStack {
             NavigationLink {
                 ProfileView()
+                    .navigationBarBackButtonHidden()
             } label: {
                 // Circular Profile Image
                 Image("juanDelaProfilePic")
