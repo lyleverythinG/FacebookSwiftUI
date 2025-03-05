@@ -15,6 +15,10 @@
 		263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */; };
 		263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F48942D67C88D0024A8E2 /* ContentView.swift */; };
 		263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F48A52D67C90F0024A8E2 /* MainTabView.swift */; };
+		265292C32D78413E00CA7F92 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292C22D78413800CA7F92 /* DividerView.swift */; };
+		265292C52D78417800CA7F92 /* MyStoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292C42D78417800CA7F92 /* MyStoryCardView.swift */; };
+		265292C92D78469A00CA7F92 /* StoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292C82D78469A00CA7F92 /* StoryFeedView.swift */; };
+		265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292CA2D7846CC00CA7F92 /* StoryCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		263F48932D67C88D0024A8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		263F48942D67C88D0024A8E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		263F48A52D67C90F0024A8E2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		265292C22D78413800CA7F92 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		265292C42D78417800CA7F92 /* MyStoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryCardView.swift; sourceTree = "<group>"; };
+		265292C82D78469A00CA7F92 /* StoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedView.swift; sourceTree = "<group>"; };
+		265292CA2D7846CC00CA7F92 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				26210DAE2D78348000500976 /* FeedView.swift */,
+				265292C82D78469A00CA7F92 /* StoryFeedView.swift */,
+				265292CA2D7846CC00CA7F92 /* StoryCardView.swift */,
+				265292C42D78417800CA7F92 /* MyStoryCardView.swift */,
 				26210DB32D783B2800500976 /* HeaderView.swift */,
 			);
 			path = Feed;
@@ -188,6 +199,7 @@
 		263F48A22D67C8B00024A8E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				265292C12D78413300CA7F92 /* Views */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -205,6 +217,14 @@
 				263F48A52D67C90F0024A8E2 /* MainTabView.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		265292C12D78413300CA7F92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				265292C22D78413800CA7F92 /* DividerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,9 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265292C92D78469A00CA7F92 /* StoryFeedView.swift in Sources */,
 				26210DAF2D78348300500976 /* FeedView.swift in Sources */,
 				26210DB42D783B2800500976 /* HeaderView.swift in Sources */,
+				265292C32D78413E00CA7F92 /* DividerView.swift in Sources */,
 				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
+				265292C52D78417800CA7F92 /* MyStoryCardView.swift in Sources */,
+				265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
 				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
 				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
