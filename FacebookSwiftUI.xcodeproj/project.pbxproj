@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26210DAF2D78348300500976 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DAE2D78348000500976 /* FeedView.swift */; };
+		26210DB22D78395800500976 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DB12D78395100500976 /* ProfileView.swift */; };
+		26210DB42D783B2800500976 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DB32D783B2800500976 /* HeaderView.swift */; };
 		263F48962D67C88D0024A8E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */; };
 		263F48972D67C88D0024A8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263F48932D67C88D0024A8E2 /* Assets.xcassets */; };
 		263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26210DAE2D78348000500976 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		26210DB12D78395100500976 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		26210DB32D783B2800500976 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		263F48632D67C6B10024A8E2 /* FacebookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSwiftUIApp.swift; sourceTree = "<group>"; };
 		263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -34,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26210DB02D78394A00500976 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26210DB12D78395100500976 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		263F485A2D67C6B10024A8E2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +143,7 @@
 		263F489C2D67C8950024A8E2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				26210DB02D78394A00500976 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -157,6 +172,8 @@
 		263F48A02D67C8AD0024A8E2 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				26210DAE2D78348000500976 /* FeedView.swift */,
+				26210DB32D783B2800500976 /* HeaderView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -263,7 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26210DAF2D78348300500976 /* FeedView.swift in Sources */,
+				26210DB42D783B2800500976 /* HeaderView.swift in Sources */,
 				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
+				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
 				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
 				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
 			);

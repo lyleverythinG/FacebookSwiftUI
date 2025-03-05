@@ -10,7 +10,7 @@ struct MainTabView: View {
     @State private var tabSelection: Int = 0
     var body: some View {
         TabView {
-            Text("Feed")
+            FeedView()
                 .tabItem {
                     Image(systemName: "house")
                         .environment(\.symbolVariants, tabSelection == 0 ? .fill : .none)
