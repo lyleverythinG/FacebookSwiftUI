@@ -6,17 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		263F48962D67C88D0024A8E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */; };
+		263F48972D67C88D0024A8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263F48932D67C88D0024A8E2 /* Assets.xcassets */; };
+		263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */; };
+		263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F48942D67C88D0024A8E2 /* ContentView.swift */; };
+		263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F48A52D67C90F0024A8E2 /* MainTabView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		263F48632D67C6B10024A8E2 /* FacebookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSwiftUIApp.swift; sourceTree = "<group>"; };
+		263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		263F48932D67C88D0024A8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		263F48942D67C88D0024A8E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		263F48A52D67C90F0024A8E2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		263F48652D67C6B10024A8E2 /* FacebookSwiftUI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FacebookSwiftUI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		263F48602D67C6B10024A8E2 /* Frameworks */ = {
@@ -32,7 +37,7 @@
 		263F485A2D67C6B10024A8E2 = {
 			isa = PBXGroup;
 			children = (
-				263F48652D67C6B10024A8E2 /* FacebookSwiftUI */,
+				263F48952D67C88D0024A8E2 /* FacebookSwiftUI */,
 				263F48642D67C6B10024A8E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +48,146 @@
 				263F48632D67C6B10024A8E2 /* FacebookSwiftUI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		263F488D2D67C88D0024A8E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		263F488E2D67C88D0024A8E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				263F48A32D67C8B10024A8E2 /* Authentication */,
+				263F48A22D67C8B00024A8E2 /* Components */,
+				263F48A12D67C8AE0024A8E2 /* CreatePost */,
+				263F48A02D67C8AD0024A8E2 /* Feed */,
+				263F489F2D67C8AB0024A8E2 /* Friends */,
+				263F489E2D67C8AA0024A8E2 /* Marketplace */,
+				263F489D2D67C8A70024A8E2 /* Menu */,
+				263F489C2D67C8950024A8E2 /* Profile */,
+				263F489B2D67C8930024A8E2 /* Root */,
+				263F489A2D67C8910024A8E2 /* Video */,
+				263F48A42D67C8E50024A8E2 /* Tabbar */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		263F48902D67C88D0024A8E2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		263F48912D67C88D0024A8E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		263F48922D67C88D0024A8E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		263F48952D67C88D0024A8E2 /* FacebookSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				263F488D2D67C88D0024A8E2 /* App */,
+				263F488E2D67C88D0024A8E2 /* Model */,
+				263F48902D67C88D0024A8E2 /* Preview Content */,
+				263F48912D67C88D0024A8E2 /* Service */,
+				263F48922D67C88D0024A8E2 /* Utils */,
+				263F48932D67C88D0024A8E2 /* Assets.xcassets */,
+				263F48942D67C88D0024A8E2 /* ContentView.swift */,
+			);
+			path = FacebookSwiftUI;
+			sourceTree = "<group>";
+		};
+		263F489A2D67C8910024A8E2 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		263F489B2D67C8930024A8E2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		263F489C2D67C8950024A8E2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		263F489D2D67C8A70024A8E2 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		263F489E2D67C8AA0024A8E2 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		263F489F2D67C8AB0024A8E2 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		263F48A02D67C8AD0024A8E2 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		263F48A12D67C8AE0024A8E2 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		263F48A22D67C8B00024A8E2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		263F48A32D67C8B10024A8E2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		263F48A42D67C8E50024A8E2 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				263F48A52D67C90F0024A8E2 /* MainTabView.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +204,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				263F48652D67C6B10024A8E2 /* FacebookSwiftUI */,
 			);
 			name = FacebookSwiftUI;
 			packageProductDependencies = (
@@ -109,6 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263F48962D67C88D0024A8E2 /* Preview Assets.xcassets in Resources */,
+				263F48972D67C88D0024A8E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
+				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
+				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
