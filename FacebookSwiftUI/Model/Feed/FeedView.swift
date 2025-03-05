@@ -21,8 +21,9 @@ struct FeedView: View {
                         DividerView(width: proxy.size.width)
                         ForEach(0 ..< 3) { _ in
                             PostView(facebookBlue: facebookBlue)
+                            DividerView(width: proxy.size.width - 15)
                         }
-                        DividerView(width: proxy.size.width - 15)
+                        
                         Spacer()
                     }
                     .toolbar {
