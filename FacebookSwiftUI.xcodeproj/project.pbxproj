@@ -22,6 +22,8 @@
 		265292C92D78469A00CA7F92 /* StoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292C82D78469A00CA7F92 /* StoryFeedView.swift */; };
 		265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292CA2D7846CC00CA7F92 /* StoryCardView.swift */; };
 		265292CD2D784D5700CA7F92 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292CC2D784D5700CA7F92 /* PostView.swift */; };
+		26D69C992D79DC100084313B /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C982D79DC100084313B /* ProfileFriendsView.swift */; };
+		26D69C9B2D79DC4B0084313B /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		265292C82D78469A00CA7F92 /* StoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedView.swift; sourceTree = "<group>"; };
 		265292CA2D7846CC00CA7F92 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
 		265292CC2D784D5700CA7F92 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		26D69C982D79DC100084313B /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
+		26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				26210DB12D78395100500976 /* ProfileView.swift */,
+				26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */,
+				26D69C982D79DC100084313B /* ProfileFriendsView.swift */,
 				261205852D78597000F995E5 /* ProfileHeaderView.swift */,
 			);
 			path = View;
@@ -309,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D69C992D79DC100084313B /* ProfileFriendsView.swift in Sources */,
+				26D69C9B2D79DC4B0084313B /* ProfileOptionsView.swift in Sources */,
 				265292C92D78469A00CA7F92 /* StoryFeedView.swift in Sources */,
 				26210DAF2D78348300500976 /* FeedView.swift in Sources */,
 				26210DB42D783B2800500976 /* HeaderView.swift in Sources */,
