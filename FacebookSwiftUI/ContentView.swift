@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+//TODO: Code clean up and improvements will be made later once basic functions and views are done.
 
 struct ContentView: View {
     var body: some View {
