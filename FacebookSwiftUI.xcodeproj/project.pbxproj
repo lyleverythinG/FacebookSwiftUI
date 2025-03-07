@@ -33,6 +33,9 @@
 		26D69C9B2D79DC4B0084313B /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */; };
 		26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9C2D79E9500084313B /* ProfilePostsView.swift */; };
 		26D69C9F2D79E9930084313B /* PostActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9E2D79E9930084313B /* PostActionButton.swift */; };
+		26E94B582D7B6EFF009D598C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E94B572D7B6EFF009D598C /* MenuView.swift */; };
+		26E94B5A2D7B74B4009D598C /* ShorcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E94B592D7B74B4009D598C /* ShorcutsView.swift */; };
+		26E94B5C2D7B755F009D598C /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E94B5B2D7B755F009D598C /* MenuHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 		26D69C9C2D79E9500084313B /* ProfilePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsView.swift; sourceTree = "<group>"; };
 		26D69C9E2D79E9930084313B /* PostActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionButton.swift; sourceTree = "<group>"; };
+		26E94B572D7B6EFF009D598C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		26E94B592D7B74B4009D598C /* ShorcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorcutsView.swift; sourceTree = "<group>"; };
+		26E94B5B2D7B755F009D598C /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,9 @@
 		263F489D2D67C8A70024A8E2 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				26E94B572D7B6EFF009D598C /* MenuView.swift */,
+				26E94B5B2D7B755F009D598C /* MenuHeaderView.swift */,
+				26E94B592D7B74B4009D598C /* ShorcutsView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -368,18 +377,21 @@
 				26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */,
 				265292C32D78413E00CA7F92 /* DividerView.swift in Sources */,
 				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
+				26E94B582D7B6EFF009D598C /* MenuView.swift in Sources */,
 				260DC0E62D7B5B2700A25A54 /* FriendsView.swift in Sources */,
 				265292C52D78417800CA7F92 /* MyStoryCardView.swift in Sources */,
 				261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */,
 				260DC0EA2D7B5EEE00A25A54 /* TagView.swift in Sources */,
 				260DC0E82D7B5EB400A25A54 /* FriendsCell.swift in Sources */,
 				260DC0EF2D7B6E2000A25A54 /* MarketPlaceButton.swift in Sources */,
+				26E94B5C2D7B755F009D598C /* MenuHeaderView.swift in Sources */,
 				265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
 				261205842D78593D00F995E5 /* CustomButton.swift in Sources */,
 				260DC0E12D7B513400A25A54 /* CreatePostView.swift in Sources */,
 				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
 				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
+				26E94B5A2D7B74B4009D598C /* ShorcutsView.swift in Sources */,
 				260DC0ED2D7B610500A25A54 /* MarketPlaceView.swift in Sources */,
 				265292CD2D784D5700CA7F92 /* PostView.swift in Sources */,
 			);
