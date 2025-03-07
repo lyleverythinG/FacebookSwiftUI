@@ -34,7 +34,7 @@ struct MainTabView: View {
                 .onAppear {
                     tabSelection = 2
                 }
-            Text("MarketPlace")
+            MarketPlaceView()
                 .tabItem {
                     Image(systemName:"storefront")
                         .environment(\.symbolVariants, tabSelection == 3 ? .fill : .none)
