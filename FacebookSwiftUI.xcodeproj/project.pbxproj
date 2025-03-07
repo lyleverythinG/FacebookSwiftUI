@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260DC0E12D7B513400A25A54 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E02D7B513400A25A54 /* CreatePostView.swift */; };
+		260DC0E32D7B58C100A25A54 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E22D7B58C100A25A54 /* ChoiceView.swift */; };
 		261205842D78593D00F995E5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261205832D78593D00F995E5 /* CustomButton.swift */; };
 		261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261205852D78597000F995E5 /* ProfileHeaderView.swift */; };
 		26210DAF2D78348300500976 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DAE2D78348000500976 /* FeedView.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260DC0E02D7B513400A25A54 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		260DC0E22D7B58C100A25A54 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		261205832D78593D00F995E5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		261205852D78597000F995E5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		26210DAE2D78348000500976 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 		263F48A12D67C8AE0024A8E2 /* CreatePost */ = {
 			isa = PBXGroup;
 			children = (
+				260DC0E02D7B513400A25A54 /* CreatePostView.swift */,
+				260DC0E22D7B58C100A25A54 /* ChoiceView.swift */,
 			);
 			path = CreatePost;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 				26D69C9F2D79E9930084313B /* PostActionButton.swift in Sources */,
 				26210DAF2D78348300500976 /* FeedView.swift in Sources */,
 				26210DB42D783B2800500976 /* HeaderView.swift in Sources */,
+				260DC0E32D7B58C100A25A54 /* ChoiceView.swift in Sources */,
 				26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */,
 				265292C32D78413E00CA7F92 /* DividerView.swift in Sources */,
 				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
@@ -335,6 +342,7 @@
 				265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
 				261205842D78593D00F995E5 /* CustomButton.swift in Sources */,
+				260DC0E12D7B513400A25A54 /* CreatePostView.swift in Sources */,
 				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
 				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
 				265292CD2D784D5700CA7F92 /* PostView.swift in Sources */,
