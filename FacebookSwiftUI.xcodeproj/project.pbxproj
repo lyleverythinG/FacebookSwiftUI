@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		260DC0E12D7B513400A25A54 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E02D7B513400A25A54 /* CreatePostView.swift */; };
 		260DC0E32D7B58C100A25A54 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E22D7B58C100A25A54 /* ChoiceView.swift */; };
+		260DC0E62D7B5B2700A25A54 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E52D7B5B2700A25A54 /* FriendsView.swift */; };
+		260DC0E82D7B5EB400A25A54 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E72D7B5EB400A25A54 /* FriendsCell.swift */; };
+		260DC0EA2D7B5EEE00A25A54 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260DC0E92D7B5EEE00A25A54 /* TagView.swift */; };
 		261205842D78593D00F995E5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261205832D78593D00F995E5 /* CustomButton.swift */; };
 		261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261205852D78597000F995E5 /* ProfileHeaderView.swift */; };
 		26210DAF2D78348300500976 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DAE2D78348000500976 /* FeedView.swift */; };
@@ -33,6 +36,9 @@
 /* Begin PBXFileReference section */
 		260DC0E02D7B513400A25A54 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		260DC0E22D7B58C100A25A54 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
+		260DC0E52D7B5B2700A25A54 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		260DC0E72D7B5EB400A25A54 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		260DC0E92D7B5EEE00A25A54 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		261205832D78593D00F995E5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		261205852D78597000F995E5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		26210DAE2D78348000500976 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -66,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260DC0E42D7B5B1E00A25A54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				260DC0E52D7B5B2700A25A54 /* FriendsView.swift */,
+				260DC0E72D7B5EB400A25A54 /* FriendsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		26210DB02D78394A00500976 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +211,7 @@
 		263F489F2D67C8AB0024A8E2 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				260DC0E42D7B5B1E00A25A54 /* View */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -248,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				265292C22D78413800CA7F92 /* DividerView.swift */,
+				260DC0E92D7B5EEE00A25A54 /* TagView.swift */,
 				261205832D78593D00F995E5 /* CustomButton.swift */,
 				265292CC2D784D5700CA7F92 /* PostView.swift */,
 			);
@@ -337,8 +354,11 @@
 				26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */,
 				265292C32D78413E00CA7F92 /* DividerView.swift in Sources */,
 				263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */,
+				260DC0E62D7B5B2700A25A54 /* FriendsView.swift in Sources */,
 				265292C52D78417800CA7F92 /* MyStoryCardView.swift in Sources */,
 				261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */,
+				260DC0EA2D7B5EEE00A25A54 /* TagView.swift in Sources */,
+				260DC0E82D7B5EB400A25A54 /* FriendsCell.swift in Sources */,
 				265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
 				261205842D78593D00F995E5 /* CustomButton.swift in Sources */,
