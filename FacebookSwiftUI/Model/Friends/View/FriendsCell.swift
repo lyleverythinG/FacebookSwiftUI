@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct FriendsCell: View {
+    private var user: User
+    
+    init(user: User) {
+        self.user = user
+    }
+    
     var body: some View {
         HStack(alignment: .top) {
             // Profile picture
-            Image("profilePic3")
+            Image(user.profileImageName ?? "")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 70, height: 70)
@@ -19,10 +25,11 @@ struct FriendsCell: View {
             
             // Friend name and confirm, delete btns.
             VStack(alignment: .leading) {
-                Text("Tommy Shelby")
+                Text("\(user.firstName) \(user.familyName)")
                     .font(.headline)
                     .fontWeight(.semibold)
                 HStack {
+                    // Confirm button
                     Button {
                         
                     } label: {
@@ -32,6 +39,8 @@ struct FriendsCell: View {
                             .background(.blue)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
+                    
+                    // Delete button
                     Button {
                         
                     } label: {
@@ -49,5 +58,5 @@ struct FriendsCell: View {
 }
 
 #Preview {
-    FriendsCell()
+    FriendsCell(user: User(id: "0", firstName: "Juan Dela", familyName: "Cruz", email: "cruz@gmail.com", age: 28, gender: "male", friendsId: [], friendsRequestsIds: [], isCurrentUser: true))
 }
