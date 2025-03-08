@@ -42,7 +42,7 @@ struct MainTabView: View {
                 .onAppear {
                     tabSelection = 3
                 }
-            Text("Menu")
+            MenuView()
                 .tabItem {
                     Image(systemName: "text.justify")
                         .environment(\.symbolVariants, tabSelection == 4 ? .fill : .none)
