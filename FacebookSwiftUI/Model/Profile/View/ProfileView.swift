@@ -22,7 +22,7 @@ struct ProfileView: View {
                     DividerView(width: proxy.size.width)
                     ProfilePostsView(width: proxy.size.width)
                     ForEach(0 ..< 2) { _ in
-                        PostView(facebookBlue: facebookBlue)
+                        PostView(isVideo: false)
                     }
                 }
             }
