@@ -38,6 +38,7 @@
 		2665224E2D7C0F5500B52AAB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665224D2D7C0F5500B52AAB /* Post.swift */; };
 		266522502D7C102300B52AAB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665224F2D7C102300B52AAB /* Item.swift */; };
 		266522532D7C10B900B52AAB /* MarketPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266522522D7C10B000B52AAB /* MarketPlaceViewModel.swift */; };
+		266522552D7C136300B52AAB /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266522542D7C136300B52AAB /* FriendsViewModel.swift */; };
 		26D69C992D79DC100084313B /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C982D79DC100084313B /* ProfileFriendsView.swift */; };
 		26D69C9B2D79DC4B0084313B /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */; };
 		26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9C2D79E9500084313B /* ProfilePostsView.swift */; };
@@ -81,6 +82,7 @@
 		2665224D2D7C0F5500B52AAB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2665224F2D7C102300B52AAB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		266522522D7C10B000B52AAB /* MarketPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceViewModel.swift; sourceTree = "<group>"; };
+		266522542D7C136300B52AAB /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
 		26D69C982D79DC100084313B /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
 		26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 		26D69C9C2D79E9500084313B /* ProfilePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsView.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		263F489F2D67C8AB0024A8E2 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				266522562D7C13E700B52AAB /* ViewModel */,
 				260DC0E42D7B5B1E00A25A54 /* View */,
 			);
 			path = Friends;
@@ -351,6 +354,14 @@
 			isa = PBXGroup;
 			children = (
 				266522522D7C10B000B52AAB /* MarketPlaceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		266522562D7C13E700B52AAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				266522542D7C136300B52AAB /* FriendsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -448,6 +459,7 @@
 				260DC0E82D7B5EB400A25A54 /* FriendsCell.swift in Sources */,
 				260DC0EF2D7B6E2000A25A54 /* MarketPlaceButton.swift in Sources */,
 				26E94B5C2D7B755F009D598C /* MenuHeaderView.swift in Sources */,
+				266522552D7C136300B52AAB /* FriendsViewModel.swift in Sources */,
 				265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */,
 				2665224E2D7C0F5500B52AAB /* Post.swift in Sources */,
 				262BE85E2D7BF800005CC828 /* CustomButtonModifier.swift in Sources */,
