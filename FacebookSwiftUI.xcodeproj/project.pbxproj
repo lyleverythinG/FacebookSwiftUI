@@ -21,6 +21,9 @@
 		26210DB42D783B2800500976 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26210DB32D783B2800500976 /* HeaderView.swift */; };
 		262BE85E2D7BF800005CC828 /* CustomButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262BE85D2D7BF800005CC828 /* CustomButtonModifier.swift */; };
 		262BE8612D7BF9F1005CC828 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262BE8602D7BF9F1005CC828 /* MenuCell.swift */; };
+		262BE8642D7BFC47005CC828 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262BE8632D7BFC47005CC828 /* VideoView.swift */; };
+		262BE8662D7BFDA0005CC828 /* VideoOptionViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262BE8652D7BFDA0005CC828 /* VideoOptionViewModifier.swift */; };
+		262BE8692D7C04D0005CC828 /* VideoOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262BE8682D7C04D0005CC828 /* VideoOptionsView.swift */; };
 		263F48962D67C88D0024A8E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */; };
 		263F48972D67C88D0024A8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263F48932D67C88D0024A8E2 /* Assets.xcassets */; };
 		263F48982D67C88D0024A8E2 /* FacebookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */; };
@@ -55,6 +58,10 @@
 		26210DB32D783B2800500976 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		262BE85D2D7BF800005CC828 /* CustomButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonModifier.swift; sourceTree = "<group>"; };
 		262BE8602D7BF9F1005CC828 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		262BE8632D7BFC47005CC828 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		262BE8652D7BFDA0005CC828 /* VideoOptionViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOptionViewModifier.swift; sourceTree = "<group>"; };
+		262BE8672D7C00FA005CC828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		262BE8682D7C04D0005CC828 /* VideoOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOptionsView.swift; sourceTree = "<group>"; };
 		263F48632D67C6B10024A8E2 /* FacebookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		263F488C2D67C88D0024A8E2 /* FacebookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSwiftUIApp.swift; sourceTree = "<group>"; };
 		263F488F2D67C88D0024A8E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				262BE85D2D7BF800005CC828 /* CustomButtonModifier.swift */,
+				262BE8652D7BFDA0005CC828 /* VideoOptionViewModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -132,6 +140,15 @@
 				262BE8602D7BF9F1005CC828 /* MenuCell.swift */,
 				26E94B5B2D7B755F009D598C /* MenuHeaderView.swift */,
 				26E94B592D7B74B4009D598C /* ShorcutsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		262BE8622D7BFC3F005CC828 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				262BE8632D7BFC47005CC828 /* VideoView.swift */,
+				262BE8682D7C04D0005CC828 /* VideoOptionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +220,7 @@
 		263F48952D67C88D0024A8E2 /* FacebookSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				262BE8672D7C00FA005CC828 /* Info.plist */,
 				263F488D2D67C88D0024A8E2 /* App */,
 				263F488E2D67C88D0024A8E2 /* Model */,
 				263F48902D67C88D0024A8E2 /* Preview Content */,
@@ -217,6 +235,7 @@
 		263F489A2D67C8910024A8E2 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				262BE8622D7BFC3F005CC828 /* View */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -395,6 +414,7 @@
 				265292C92D78469A00CA7F92 /* StoryFeedView.swift in Sources */,
 				26D69C9F2D79E9930084313B /* PostActionButton.swift in Sources */,
 				26210DAF2D78348300500976 /* FeedView.swift in Sources */,
+				262BE8642D7BFC47005CC828 /* VideoView.swift in Sources */,
 				26210DB42D783B2800500976 /* HeaderView.swift in Sources */,
 				260DC0E32D7B58C100A25A54 /* ChoiceView.swift in Sources */,
 				26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */,
@@ -415,7 +435,9 @@
 				260DC0E12D7B513400A25A54 /* CreatePostView.swift in Sources */,
 				263F48992D67C88D0024A8E2 /* ContentView.swift in Sources */,
 				263F48A62D67C9130024A8E2 /* MainTabView.swift in Sources */,
+				262BE8692D7C04D0005CC828 /* VideoOptionsView.swift in Sources */,
 				26E94B5A2D7B74B4009D598C /* ShorcutsView.swift in Sources */,
+				262BE8662D7BFDA0005CC828 /* VideoOptionViewModifier.swift in Sources */,
 				260DC0ED2D7B610500A25A54 /* MarketPlaceView.swift in Sources */,
 				265292CD2D784D5700CA7F92 /* PostView.swift in Sources */,
 			);
@@ -554,9 +576,9 @@
 				DEVELOPMENT_TEAM = GDH63KYKJ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FacebookSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,9 +605,9 @@
 				DEVELOPMENT_TEAM = GDH63KYKJ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FacebookSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
