@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct PostView: View {
-    private var facebookBlue: Color
-    init(facebookBlue: Color) {
-        self.facebookBlue = facebookBlue
+    private var facebookBlue: Color = Color(red: 26/555, green: 103/255, blue: 178/255)
+    private var isVideo: Bool
+    init(isVideo: Bool) {
+        self.isVideo = isVideo
     }
     
     var body: some View {
@@ -53,12 +55,20 @@ struct PostView: View {
             // Post Text
             Text("Time to party with the team")
                 .padding(.horizontal)
-            
-            // Post Image
-            Image("office")
-                .resizable()
-                .scaledToFill()
-            
+            if !isVideo {
+                // Post Image
+                Image("office")
+                    .resizable()
+                    .scaledToFill()
+            }
+            else {
+                // Video Player
+                if let url = URL(string:"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4") {
+                    VideoPlayer(player: AVPlayer(url: url))
+                        .frame(height: 400)
+                }
+                
+            }
             // Likes, comments, and shares info part.
             HStack(spacing: 3) {
                 Image("like")
@@ -115,5 +125,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView(facebookBlue: Color(red: 26/555, green: 103/255, blue: 178/255))
+    PostView(isVideo: false)
 }
