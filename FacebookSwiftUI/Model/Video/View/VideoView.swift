@@ -12,9 +12,10 @@ struct VideoView: View {
         NavigationView {
             ScrollView {
                 VideoOptionsView()
-                ForEach(0 ..< 3) { _ in
-                    PostView(isVideo: true)
-                }
+                //TODO: Uncomment and implement this part later.
+                //                ForEach(0 ..< 3) { _ in
+                //                    PostView(isVideo: true)
+                //                }
             }
             .scrollIndicators(.hidden)
             .toolbar {
