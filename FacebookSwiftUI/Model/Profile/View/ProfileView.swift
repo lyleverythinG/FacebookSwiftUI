@@ -11,18 +11,24 @@ import SwiftUI
 struct ProfileView: View {
     @Environment(\.dismiss) private var dismiss
     private var facebookBlue: Color = Color(red: 26/555, green: 103/255, blue: 178/255)
+    @StateObject private var viewModel: FeedViewModel
+    init(viewModel: FeedViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
         GeometryReader { proxy in
             ScrollView {
                 VStack {
-                    ProfileHeaderView(width: proxy.size.width)
+                    ProfileHeaderView(width: proxy.size.width,viewModel: viewModel)
                     DividerView(width: proxy.size.width)
                     ProfileOptionsView()
-                    ProfileFriendsView(width: proxy.size.width)
+                    ProfileFriendsView(width: proxy.size.width,viewModel: viewModel)
                     DividerView(width: proxy.size.width)
                     ProfilePostsView(width: proxy.size.width)
-                    ForEach(0 ..< 2) { _ in
-                        PostView(isVideo: false)
+                    
+                    ForEach(viewModel.posts) { post in
+                        PostView(isVideo: false, post: post)
                     }
                 }
             }
@@ -52,5 +58,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(viewModel: FeedViewModel())
 }

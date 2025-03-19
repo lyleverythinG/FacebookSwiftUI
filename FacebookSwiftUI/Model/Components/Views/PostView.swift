@@ -11,8 +11,10 @@ import AVKit
 struct PostView: View {
     private var facebookBlue: Color = Color(red: 26/555, green: 103/255, blue: 178/255)
     private var isVideo: Bool
-    init(isVideo: Bool) {
+    private var post: Post
+    init(isVideo: Bool, post: Post) {
         self.isVideo = isVideo
+        self.post = post
     }
     
     var body: some View {
@@ -20,17 +22,17 @@ struct PostView: View {
             
             // Consist of profile picture + name + time of post and suffix icons (... and x).
             HStack {
-                Image("juanDelaProfilePic")
+                Image(post.user?.profileImageName ?? "")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Juan Dela Cruz")
-                        .font(.system(size: 14, weight: .semibold))
+                    Text("\(post.user?.firstName ?? "") \(post.user?.familyName ?? "")")
+                        .font( .system(size: 14, weight: .semibold))
                     HStack(spacing: 5) {
                         Text("1 d")
-                        Circle()
+                         Circle()
                             .frame(width: 2, height: 2)
                             .fontWeight(.bold)
                         Image(systemName: "globe")
@@ -53,11 +55,11 @@ struct PostView: View {
             .padding(.horizontal)
             
             // Post Text
-            Text("Time to party with the team")
+            Text(post.postTitle)
                 .padding(.horizontal)
             if !isVideo {
                 // Post Image
-                Image("office")
+                Image(post.postUrl)
                     .resizable()
                     .scaledToFill()
             }
@@ -122,8 +124,4 @@ struct PostView: View {
             .foregroundStyle(facebookBlue)
         }
     }
-}
-
-#Preview {
-    PostView(isVideo: false)
 }
