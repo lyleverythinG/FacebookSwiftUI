@@ -26,9 +26,8 @@ struct ProfileView: View {
                     ProfileFriendsView(width: proxy.size.width,viewModel: viewModel)
                     DividerView(width: proxy.size.width)
                     ProfilePostsView(width: proxy.size.width)
-                    
-                    ForEach(viewModel.posts) { post in
-                        PostView(isVideo: false, post: post)
+                    ForEach(0 ..< viewModel.myPostIndexes.count) { index in
+                        PostView(isVideo: false, viewModel: viewModel, index: viewModel.myPostIndexes[index])
                     }
                 }
             }
