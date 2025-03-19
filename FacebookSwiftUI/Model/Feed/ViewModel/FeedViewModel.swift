@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 class FeedViewModel: ObservableObject {
     @Published var users: [User] = [
@@ -26,6 +27,24 @@ class FeedViewModel: ObservableObject {
         .init(id: "1", userId: "0", postTitle: "You'll never walk alone", postLikes: 3, postShares: 4, postUrl: "stadium", isVideo: false),
     ]
     
+    @Published var myPostIndexes: [Int] = []
+    @Published var selectedImg: PhotosPickerItem? {
+        didSet {
+            Task { try await loadImage(fromItem: selectedImg!)}
+        }
+    }
+    
+    @Published var selectedCoverImg: PhotosPickerItem? {
+        didSet {
+            Task { try await loadCoverImg(fromItem: selectedCoverImg!)}
+        }
+    }
+    
+    @Published var profileImg: Image = Image("no_profile")
+    @Published var coverImg: Image = Image("no_profile")
+    
+    private var uiImage: UIImage?
+    
     init() {
         setupFriends()
         setupPosts()
@@ -38,6 +57,27 @@ class FeedViewModel: ObservableObject {
     private func setupPosts() {
         for index in 0 ..< posts.count {
             posts[index].user = users.first(where: {$0.id == posts[index].userId})
+            if posts[index].user == users[0] {
+                myPostIndexes.append(index)
+            }
         }
+    }
+    
+    @MainActor
+    func loadImage(fromItem item: PhotosPickerItem?) async throws {
+        guard let item = item else { return }
+        guard let data = try? await item.loadTransferable(type: Data.self) else { return }
+        guard let uiImage = UIImage(data: data) else { return }
+        self.uiImage = uiImage
+        self.profileImg = Image(uiImage: uiImage)
+    }
+    
+    @MainActor
+    func loadCoverImg(fromItem item: PhotosPickerItem?) async throws {
+        guard let item = item else { return }
+        guard let data = try? await item.loadTransferable(type: Data.self) else { return }
+        guard let uiImage = UIImage(data: data) else { return }
+        self.uiImage = uiImage
+        self.coverImg = Image(uiImage: uiImage)
     }
 }
