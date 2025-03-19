@@ -26,7 +26,7 @@ struct LoginView: View {
                         TextField("Mobile number or email address", text: $viewModel.email)
                             .textInputAutocapitalization(.never)
                             .customTextFieldViewModifier(width: proxy.size.width - 30)
-                        TextField("Password", text: $viewModel.password)
+                        SecureField("Password", text: $viewModel.password)
                             .textInputAutocapitalization(.never)
                             .customTextFieldViewModifier(width: proxy.size.width - 30)
                         Button(action: {}, label: {
@@ -49,7 +49,10 @@ struct LoginView: View {
                     
                     // Create new account
                     VStack(spacing: 24) {
-                        Button(action: {}, label: {
+                        NavigationLink {
+                            AddNameView()
+                                .navigationBarBackButtonHidden()
+                        } label: {
                             Text("Create new account")
                                 .font(.headline)
                                 .fontWeight(.semibold)
@@ -58,7 +61,7 @@ struct LoginView: View {
                                     RoundedRectangle(cornerRadius: 30)
                                         .stroke(.blue, lineWidth: 1)
                                 }
-                        })
+                        }
                         
                         // Meta
                         HStack(spacing: 5) {
