@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct StoryCardView: View {
+    private var friend: User
+    init(friend: User) {
+        self.friend = friend
+    }
+    
     var body: some View {
-        Image("Story1")
+        Image(friend.coverImageName ?? "")
             .resizable()
             .scaledToFill()
             .frame(width: 100, height: 170)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .overlay {
                 VStack(alignment: .leading) {
-                    Image("profilePic1")
+                    Image(friend.profileImageName ?? "")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 35, height: 35)
@@ -25,7 +30,7 @@ struct StoryCardView: View {
                             Circle().stroke(.blue, lineWidth: 3)
                         }
                     Spacer()
-                    Text("Jim Halpert")
+                    Text("\(friend.firstName) \(friend.familyName)")
                         .foregroundStyle(.white)
                         .font(.system(size: 12, weight: .semibold))
                         .padding(.leading, 8)
@@ -35,8 +40,4 @@ struct StoryCardView: View {
                 .padding(.vertical, 8)
             }
     }
-}
-
-#Preview {
-    StoryCardView()
 }

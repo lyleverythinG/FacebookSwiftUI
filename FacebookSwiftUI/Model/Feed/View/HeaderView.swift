@@ -9,15 +9,20 @@ import SwiftUI
 
 struct HeaderView: View {
     @State private var showCreatePost: Bool = false
+    @StateObject private var viewModel: FeedViewModel
+    init(viewModel: FeedViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         HStack {
             NavigationLink {
-                ProfileView()
+                ProfileView(viewModel: viewModel)
                     .navigationBarBackButtonHidden()
             } label: {
+                //TODO: Update this one later to display actual user.
                 // Circular Profile Image
-                Image("juanDelaProfilePic")
+                Image(viewModel.users[0].profileImageName ?? "")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40)
@@ -59,5 +64,5 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView()
+    HeaderView(viewModel: FeedViewModel())
 }
