@@ -11,10 +11,12 @@ import AVKit
 struct PostView: View {
     private var facebookBlue: Color = Color(red: 26/555, green: 103/255, blue: 178/255)
     private var isVideo: Bool
-    private var post: Post
-    init(isVideo: Bool, post: Post) {
+    @StateObject private var viewModel: FeedViewModel
+    private var index: Int
+    init(isVideo: Bool, viewModel: FeedViewModel, index: Int) {
         self.isVideo = isVideo
-        self.post = post
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.index = index
     }
     
     var body: some View {
@@ -22,13 +24,13 @@ struct PostView: View {
             
             // Consist of profile picture + name + time of post and suffix icons (... and x).
             HStack {
-                Image(post.user?.profileImageName ?? "")
+                Image(viewModel.posts[index].user?.profileImageName ?? "")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("\(post.user?.firstName ?? "") \(post.user?.familyName ?? "")")
+                    Text("\(viewModel.posts[index].user?.firstName ?? "") \(viewModel.posts[index].user?.familyName ?? "")")
                         .font( .system(size: 14, weight: .semibold))
                     HStack(spacing: 5) {
                         Text("1 d")
@@ -55,11 +57,11 @@ struct PostView: View {
             .padding(.horizontal)
             
             // Post Text
-            Text(post.postTitle)
+            Text(viewModel.posts[index].postTitle)
                 .padding(.horizontal)
             if !isVideo {
                 // Post Image
-                Image(post.postUrl)
+                Image(viewModel.posts[index].postUrl)
                     .resizable()
                     .scaledToFill()
             }
