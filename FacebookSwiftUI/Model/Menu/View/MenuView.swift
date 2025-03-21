@@ -34,7 +34,10 @@ struct MenuView: View {
                     }
                 }
                 .alert("Logout of your account?", isPresented: $showLogoutAlert) {
-                    Button("Logout") { }
+                    Button("Logout") {
+                        //TODO: Can create another view model for menu.
+                        AuthService.shared.signOut()
+                    }
                     Button("Cancel", role: .cancel) { }
                 }
                 .background(Color(.systemGray6))

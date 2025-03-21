@@ -63,6 +63,9 @@
 		26E94B582D7B6EFF009D598C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E94B572D7B6EFF009D598C /* MenuView.swift */; };
 		26E94B5A2D7B74B4009D598C /* ShorcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E94B592D7B74B4009D598C /* ShorcutsView.swift */; };
 		26E94B5C2D7B755F009D598C /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E94B5B2D7B755F009D598C /* MenuHeaderView.swift */; };
+		26F21AB52D8D99F300E79BE7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F21AB42D8D99F000E79BE7 /* RootViewModel.swift */; };
+		26F21AB72D8D9A4400E79BE7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F21AB62D8D9A4200E79BE7 /* RootView.swift */; };
+		26F21AB92D8D9D4C00E79BE7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F21AB82D8D9D4C00E79BE7 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +123,9 @@
 		26E94B572D7B6EFF009D598C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		26E94B592D7B74B4009D598C /* ShorcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorcutsView.swift; sourceTree = "<group>"; };
 		26E94B5B2D7B755F009D598C /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
+		26F21AB42D8D99F000E79BE7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		26F21AB62D8D9A4200E79BE7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		26F21AB82D8D9D4C00E79BE7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				26C5E4172D8D378900B9E6B2 /* AuthService.swift */,
+				26F21AB82D8D9D4C00E79BE7 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -302,6 +309,8 @@
 		263F489B2D67C8930024A8E2 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				26F21AB32D8D99E700E79BE7 /* ViewModel */,
+				26F21AB22D8D99E200E79BE7 /* View */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -453,6 +462,22 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		26F21AB22D8D99E200E79BE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26F21AB62D8D9A4200E79BE7 /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26F21AB32D8D99E700E79BE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26F21AB42D8D99F000E79BE7 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -554,6 +579,8 @@
 				260DC0E62D7B5B2700A25A54 /* FriendsView.swift in Sources */,
 				265292C52D78417800CA7F92 /* MyStoryCardView.swift in Sources */,
 				261205862D78597000F995E5 /* ProfileHeaderView.swift in Sources */,
+				26F21AB72D8D9A4400E79BE7 /* RootView.swift in Sources */,
+				26F21AB52D8D99F300E79BE7 /* RootViewModel.swift in Sources */,
 				260DC0EA2D7B5EEE00A25A54 /* TagView.swift in Sources */,
 				260DC0E82D7B5EB400A25A54 /* FriendsCell.swift in Sources */,
 				260DC0EF2D7B6E2000A25A54 /* MarketPlaceButton.swift in Sources */,
@@ -564,6 +591,7 @@
 				2665224E2D7C0F5500B52AAB /* Post.swift in Sources */,
 				262BE85E2D7BF800005CC828 /* CustomButtonModifier.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
+				26F21AB92D8D9D4C00E79BE7 /* UserService.swift in Sources */,
 				26A1895E2D8B511100B3EBCE /* GenderView.swift in Sources */,
 				261205842D78593D00F995E5 /* CustomButton.swift in Sources */,
 				266522502D7C102300B52AAB /* Item.swift in Sources */,

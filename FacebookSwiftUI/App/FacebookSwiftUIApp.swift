@@ -22,8 +22,7 @@ struct FacebookSwiftUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            //TODO: Handle view redirection later.
-            LoginView()
+            RootView()
         }
     }
 }
