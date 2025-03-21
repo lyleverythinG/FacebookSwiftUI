@@ -25,12 +25,12 @@ struct AddPasswordView: View {
                     .font(.footnote)
                 
                 // Password field
-                SecureField("Password", text: $viewModel.firstName)
+                SecureField("Password", text: $viewModel.password)
                     .customTextFieldViewModifier(width: proxy.size.width - 30)
                 
                 // next button with redirection to agreement view
                 NavigationLink {
-                    AgreementView()
+                    AgreementView(viewModel: viewModel)
                         .navigationBarBackButtonHidden()
                 } label: {
                     Text("Next")
