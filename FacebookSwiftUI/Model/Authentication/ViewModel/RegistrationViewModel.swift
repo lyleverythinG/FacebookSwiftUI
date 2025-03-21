@@ -13,4 +13,5 @@ class RegistrationViewModel: ObservableObject {
     @Published var gender: String = ""
     @Published var genderChoices: [String] = ["female", "male", "More options"]
     @Published var age: String = ""
+    @Published var email: String = ""
 }

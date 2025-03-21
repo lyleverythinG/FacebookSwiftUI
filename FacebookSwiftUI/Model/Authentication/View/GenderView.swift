@@ -65,7 +65,8 @@ struct GenderView: View {
                 
                 // Next button
                 NavigationLink {
-                    Text("Email Address")
+                    AddEmailView(viewModel: viewModel)
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Next")
                         .font(.subheadline)
