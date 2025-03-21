@@ -35,4 +35,21 @@ class AuthService: ObservableObject {
             print("failed to create user \(error.localizedDescription)")
         }
     }
+    
+    @MainActor
+    func login(email: String, password: String) async throws {
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            self.userSession = result.user
+            try await UserService.shared.fetchCurrentUser()
+        } catch {
+            print("Failed to login \(error.localizedDescription)")
+        }
+    }
+    
+    func signOut() {
+        try? Auth.auth().signOut()
+        self.userSession = nil
+        UserService.shared.reset()
+    }
 }
