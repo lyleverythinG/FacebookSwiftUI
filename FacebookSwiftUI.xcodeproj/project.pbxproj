@@ -45,6 +45,8 @@
 		26760F792D80631E0052B69D /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26760F782D80631A0052B69D /* FeedViewModel.swift */; };
 		26A1895A2D8B493700B3EBCE /* AddNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A189592D8B493600B3EBCE /* AddNameView.swift */; };
 		26A1895C2D8B4BC500B3EBCE /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A1895B2D8B4BC500B3EBCE /* RegistrationViewModel.swift */; };
+		26A1895E2D8B511100B3EBCE /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A1895D2D8B511100B3EBCE /* GenderView.swift */; };
+		26C5E4042D8D0EAF00B9E6B2 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C5E4032D8D0EAE00B9E6B2 /* AgeView.swift */; };
 		26D69C992D79DC100084313B /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C982D79DC100084313B /* ProfileFriendsView.swift */; };
 		26D69C9B2D79DC4B0084313B /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */; };
 		26D69C9D2D79E9500084313B /* ProfilePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D69C9C2D79E9500084313B /* ProfilePostsView.swift */; };
@@ -95,6 +97,8 @@
 		26760F782D80631A0052B69D /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		26A189592D8B493600B3EBCE /* AddNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameView.swift; sourceTree = "<group>"; };
 		26A1895B2D8B4BC500B3EBCE /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		26A1895D2D8B511100B3EBCE /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		26C5E4032D8D0EAE00B9E6B2 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
 		26D69C982D79DC100084313B /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
 		26D69C9A2D79DC4B0084313B /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 		26D69C9C2D79E9500084313B /* ProfilePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsView.swift; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 			children = (
 				260691AF2D8AF94E00DBCDB2 /* LoginView.swift */,
 				26A189592D8B493600B3EBCE /* AddNameView.swift */,
+				26A1895D2D8B511100B3EBCE /* GenderView.swift */,
+				26C5E4032D8D0EAE00B9E6B2 /* AgeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,6 +522,7 @@
 				2665224E2D7C0F5500B52AAB /* Post.swift in Sources */,
 				262BE85E2D7BF800005CC828 /* CustomButtonModifier.swift in Sources */,
 				26210DB22D78395800500976 /* ProfileView.swift in Sources */,
+				26A1895E2D8B511100B3EBCE /* GenderView.swift in Sources */,
 				261205842D78593D00F995E5 /* CustomButton.swift in Sources */,
 				266522502D7C102300B52AAB /* Item.swift in Sources */,
 				260691B32D8AFA2300DBCDB2 /* LoginViewModel.swift in Sources */,
@@ -529,6 +536,7 @@
 				260DC0ED2D7B610500A25A54 /* MarketPlaceView.swift in Sources */,
 				260691B02D8AF95100DBCDB2 /* LoginView.swift in Sources */,
 				265292CD2D784D5700CA7F92 /* PostView.swift in Sources */,
+				26C5E4042D8D0EAF00B9E6B2 /* AgeView.swift in Sources */,
 				260691B52D8AFBC900DBCDB2 /* CustomTextFieldViewModifier.swift in Sources */,
 				2665224C2D7C0E9C00B52AAB /* User.swift in Sources */,
 				26A1895C2D8B4BC500B3EBCE /* RegistrationViewModel.swift in Sources */,
