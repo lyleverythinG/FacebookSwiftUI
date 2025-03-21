@@ -30,9 +30,10 @@ struct AddNameView: View {
                         .customTextFieldViewModifier(width: (proxy.size.width / 2.3) + 5)
                 }
                 
-                // next button with navigation
+                // next button with redirection to age view
                 NavigationLink {
-                    Text("Age View")
+                    AgeView(viewModel: viewModel)
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Next")
                         .font(.subheadline)
