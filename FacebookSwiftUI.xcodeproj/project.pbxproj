@@ -37,6 +37,7 @@
 		265292C92D78469A00CA7F92 /* StoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292C82D78469A00CA7F92 /* StoryFeedView.swift */; };
 		265292CB2D7846CC00CA7F92 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292CA2D7846CC00CA7F92 /* StoryCardView.swift */; };
 		265292CD2D784D5700CA7F92 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265292CC2D784D5700CA7F92 /* PostView.swift */; };
+		2662C7D62D90864C0055F194 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2662C7D52D90864C0055F194 /* GoogleService-Info.plist */; };
 		2665224C2D7C0E9C00B52AAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665224B2D7C0E9A00B52AAB /* User.swift */; };
 		2665224E2D7C0F5500B52AAB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665224D2D7C0F5500B52AAB /* Post.swift */; };
 		266522502D7C102300B52AAB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665224F2D7C102300B52AAB /* Item.swift */; };
@@ -100,6 +101,7 @@
 		265292C82D78469A00CA7F92 /* StoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedView.swift; sourceTree = "<group>"; };
 		265292CA2D7846CC00CA7F92 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
 		265292CC2D784D5700CA7F92 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		2662C7D52D90864C0055F194 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2665224B2D7C0E9A00B52AAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2665224D2D7C0F5500B52AAB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2665224F2D7C102300B52AAB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 		26C5E40B2D8D2F9100B9E6B2 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				2662C7D52D90864C0055F194 /* GoogleService-Info.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				263F48962D67C88D0024A8E2 /* Preview Assets.xcassets in Resources */,
+				2662C7D62D90864C0055F194 /* GoogleService-Info.plist in Resources */,
 				263F48972D67C88D0024A8E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,7 +757,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.FacebookSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.FacebookSwiftUI.v1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -782,7 +786,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.FacebookSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.FacebookSwiftUI.v1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
