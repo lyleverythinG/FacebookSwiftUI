@@ -24,4 +24,22 @@ class UserService {
     func reset() {
         self.currentUser = nil
     }
+    
+    @MainActor
+    func updateProfileImage(withImageurl imageUrl: String) async throws {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        try await Firestore.firestore().collection("users").document(uid).updateData([
+            "profileImageName" : imageUrl
+        ])
+        self.currentUser?.profileImageName = imageUrl
+    }
+    
+    @MainActor
+    func updateCoverImage(withImageurl imageUrl: String) async throws {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        try await Firestore.firestore().collection("users").document(uid).updateData([
+            "coverImageName" : imageUrl
+        ])
+        self.currentUser?.coverImageName = imageUrl
+    }
 }
