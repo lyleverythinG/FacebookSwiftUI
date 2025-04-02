@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PhotosUI
+import Kingfisher
 
 struct ProfileHeaderView: View {
     private var width: CGFloat
@@ -25,10 +26,16 @@ struct ProfileHeaderView: View {
                 showCoverImgPicker.toggle()
             } label: {
                 // Cover photo section.
-                viewModel.coverImg
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: width, height: 250)
+                ZStack {
+                    Image("no_profile")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: 250)
+                    KFImage(URL(string: viewModel.currentUser?.coverImageName ?? ""))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: 250)
+                }
             }
             Color.white
                 .frame(height: 180)
@@ -39,20 +46,32 @@ struct ProfileHeaderView: View {
                 Button {
                     showProfileImgPicker.toggle()
                 } label: {
-                    viewModel.profileImg
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 120, height: 120)
-                        .clipShape(Circle())
-                        .overlay {
-                            Circle()
-                                .stroke(Color(.systemGray6), lineWidth: 3)
-                        }
-                        .padding(.top, 170)
+                    ZStack {
+                        Image("no_profile")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 120, height: 120)
+                            .clipShape(Circle())
+                            .overlay {
+                                Circle()
+                                    .stroke(Color(.systemGray6), lineWidth: 3)
+                            }
+                            .padding(.top, 170)
+                        KFImage(URL(string: viewModel.currentUser?.profileImageName ?? ""))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 120, height: 120)
+                            .clipShape(Circle())
+                            .overlay {
+                                Circle()
+                                    .stroke(Color(.systemGray6), lineWidth: 3)
+                            }
+                            .padding(.top, 170)
+                    }
                 }
                 
                 // Profile Name
-                Text("\(viewModel.users[0].firstName) \(viewModel.users[0].familyName)")
+                Text("\(viewModel.currentUser?.firstName ?? "") \(viewModel.currentUser?.familyName ?? "")")
                     .font(.title)
                     .fontWeight(.bold)
                 

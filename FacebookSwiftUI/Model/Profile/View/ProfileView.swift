@@ -52,6 +52,8 @@ struct ProfileView: View {
                     })
                 }
             }
+            .toolbarBackground(Color.white, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
