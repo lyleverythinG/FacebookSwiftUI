@@ -32,7 +32,7 @@ struct ProfileView: View {
                 }
             }
             .scrollIndicators(.hidden)
-            .navigationTitle("Juan Dela Cruz")
+            .navigationTitle("\(viewModel.currentUser?.firstName ?? "") \(viewModel.currentUser?.familyName ?? "")")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {

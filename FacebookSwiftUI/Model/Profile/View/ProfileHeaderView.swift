@@ -76,7 +76,7 @@ struct ProfileHeaderView: View {
                     .fontWeight(.bold)
                 
                 // Number of friends
-                Text("\(viewModel.friends.count)")
+                Text("\(viewModel.friends.count) ")
                     .font(.headline) +
                 Text("Friends")
                     .font(.headline)
