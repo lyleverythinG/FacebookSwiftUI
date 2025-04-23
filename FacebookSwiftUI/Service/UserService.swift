@@ -13,6 +13,7 @@ class UserService {
     
     @Published var currentUser: User?
     @Published var friends: [User]?
+    @Published var friendsRequests: [User]?
     static let shared = UserService()
     
     init() {
@@ -25,11 +26,13 @@ class UserService {
         let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
         self.currentUser = try snapshot.data(as: User.self)
         try await fetchFriends()
+        try await fetchFriendsRequests()
     }
     
     func reset() {
         self.currentUser = nil
         self.friends = nil
+        self.friendsRequests = nil
     }
     
     @MainActor
@@ -56,5 +59,13 @@ class UserService {
         let users = snapshot.documents.compactMap({try? $0.data(as: User.self)})
         guard let friendsIds = self.currentUser?.friendsId else { return }
         self.friends = users.filter({ friendsIds.contains($0.id)})
+    }
+    
+    @MainActor
+    func fetchFriendsRequests() async throws {
+        let snapshot  =  try await Firestore.firestore().collection("users").getDocuments()
+        let users = snapshot.documents.compactMap({try? $0.data(as: User.self)})
+        guard let friendRequestsIds = self.currentUser?.friendsRequestsIds else { return }
+        self.friendsRequests = users.filter({ friendRequestsIds.contains($0.id)})
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct MyStoryCardView: View {
     @StateObject private var viewModel: FeedViewModel
@@ -20,11 +21,18 @@ struct MyStoryCardView: View {
                 .frame(width: 100, height: 170)
             
             //TODO: Update this one later to display actual user.
-            Image(viewModel.users[0].profileImageName ?? "")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 100, height: 110)
-                .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 15, topTrailing: 15)))
+            ZStack {
+                Image("no_profile")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 110)
+                    .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 15, topTrailing: 15)))
+                KFImage(URL(string:viewModel.currentUser?.profileImageName ?? ""))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 110)
+                    .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 15, topTrailing: 15)))
+            }
             
             // Plus Icon
             VStack(spacing: 5) {

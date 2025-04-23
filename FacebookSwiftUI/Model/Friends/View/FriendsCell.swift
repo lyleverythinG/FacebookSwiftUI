@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FriendsCell: View {
     private var user: User
@@ -17,11 +18,18 @@ struct FriendsCell: View {
     var body: some View {
         HStack(alignment: .top) {
             // Profile picture
-            Image(user.profileImageName ?? "")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 70, height: 70)
-                .clipShape(Circle())
+            ZStack {
+                Image("no_profile")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 70, height: 70)
+                    .clipShape(Circle())
+                KFImage(URL(string: user.profileImageName ?? ""))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 70, height: 70)
+                    .clipShape(Circle())
+            }
             
             // Friend name and confirm, delete btns.
             VStack(alignment: .leading) {

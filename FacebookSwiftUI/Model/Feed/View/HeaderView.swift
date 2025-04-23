@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct HeaderView: View {
     @State private var showCreatePost: Bool = false
@@ -22,11 +23,18 @@ struct HeaderView: View {
             } label: {
                 //TODO: Update this one later to display actual user.
                 // Circular Profile Image
-                Image(viewModel.users[0].profileImageName ?? "")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
+                ZStack {
+                    Image("no_profile")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                    KFImage(URL(string:viewModel.currentUser?.profileImageName ?? "" ))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                }
             }
             Button(action: {
                 showCreatePost.toggle()
